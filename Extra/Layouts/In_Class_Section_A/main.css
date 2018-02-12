@@ -1,0 +1,46 @@
+
+html{
+	margin: 0;
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	height: 0;
+	font-size: 0;
+	content: '';
+	visibility: hidden;
+
+}
+
+div,
+header,
+footer,
+section,
+article,
+aside, 
+main{ 
+min-height: 100px;
+background-color: rgba(0,100,255);
+ }
+
+ main{
+ 	width: 0;
+ 	margin: 0;
+ 	padding:0;
+ }
+
+article{
+width: ;
+margin: ;
+padding: ;
+}
+aside{
+	width: ;
+	float: ;
+
+
+		}
+	}
+
+}
+
