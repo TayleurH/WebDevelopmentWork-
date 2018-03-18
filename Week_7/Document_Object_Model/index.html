@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic DOM</title>
+</head>
+<body>
+
+<button>onclick="addSingleP();">Add a sing para bad way</button>
+<button>onclick="addMultiP(8);">p with loop and nodes!</button>
+
+<div id="content">
+	
+</div>
+
+<script type="text/javascript">
+	var content;
+content = document.getElementById('content');
+console.log(content);
+
+function addMultiP(num) {
+	for(var i=0; i<num; i++){
+		console.log(i);
+	var p = document.createElement('P');
+	var text = document.createTextNode('This is a para number ' + i);
+
+	p.appendChild(text);
+	content.appendChild(p);
+}
+}
+</script>
+</body>
+</html>
