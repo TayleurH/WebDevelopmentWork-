@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Random</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+
+var z = 2.35;
+
+var zf = Math.floor(z);
+console.log(zf);
+
+
+var zc = Math.ceil(z);
+console.log(zc);
+
+var num1 = 2.2;
+var num2 = 2.7;
+
+console.log(Math.round(num1));
+console.log(Math.round(num2));
+
+var r  = Math.random();
+console.log(r);
+
+
+var yn = Math.round(Math.random());
+//if(yn===0){
+//	alert('heads');
+
+//} else{
+//	alert('tails');
+//}
+
+function randomNumber(n) {
+	var rn = Math.round(n * Math.random());
+	console.log(rn);
+}
+randomNumber(40);
+
+// random number between range of 2 
+
+function randNumRange(min,max){
+	//math expressions more 
+	var rn = Math.round(Math.random() * (max-min) + min)
+return rn;
+
+var rand1 = randNumRange(34,77);
+var rand2 = randNumRange(500,707);
+console.log(rand1,rand2);
+}
+
+
+</script>
+
+</body>
+</html>

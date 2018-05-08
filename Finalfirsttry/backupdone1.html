@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    <meta charset="utf-8">
+    <title>Hylton Portfolio</title>
+    <meta name="Tayleur" content="Portfolio Website">
+    <meta name="keywords" content="Portfolio Website">
+    <meta name="Portfolio Home" content="Portfolio">
+
+
+.border1 {
+    
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 10;
+     
+}
+
+.border2 {
+    
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    
+}
+
+.border3 {
+    
+    border: 3px solid white;
+    border-style: solid;
+    
+}
+
+
+
+p.solid {border-style: solid;}
+
+
+
+</style>
+</head>
+<body onload="typeWriter()">
+   
+
+<img src="festisite_google (1).png" alt="professionalpic" height="87" width="213">
+
+<div class="border1">
+   <p id="t1" class="solid"></p>        
+     </div>   
+  
+    
+        
+     <div>          
+<img src="profilepic.jpg" alt="professionalpic" height="400" width="400">
+</div>
+
+<div>
+        About:
+        
+        <span class="border2">Tayleur Hylton is a NYU graduate. She concentrated in marketing and socioly and has delved into digital marketing for her career path. To learn more visit an array of her skills below.
+        
+        
+        
+        </span>
+        </div>
+        <nav>
+
+        <button type="button"> <a href="./page2css.html">Resume</a> </button>
+            <button type="button"> <a href="./page3css.html">Photography</a> </button>
+            <button type="button"> <a href="./page4css.html">Essays</a> </button>
+        </nav>
+
+    
+  <script>
+var i = 0;
+var txt = 'Tayleur Hylton';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("t1").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+ 
+    
+</body>
+
+</html>

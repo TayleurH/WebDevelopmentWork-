@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.buttoncontact {
+    background-color: #4d90fe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+
+}
+
+div.ex11 {
+    width:50%;
+    margin-left: 90%;
+    
+    margin-top: 1%;
+}
+
+div.ex1 {
+    width:500px;
+    margin: auto;
+    border: 3px solid #A9A9A9;
+    border-style: outset;
+}
+
+div.ex2 {
+    width:700px;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 0px;
+
+}
+
+div.ex3 {
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ex4 {
+    width:250px;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+div.ex7 {
+    width:500px;
+    margin-left: 600px;
+    margin-right: auto;
+    margin-top: 29px;
+
+}
+
+.left {
+    float: left;
+    width: 600px;
+    border: none;
+    padding: 10px;
+    padding-left: 100px; 
+}
+
+.right {
+    float: right;
+    width: 450px;
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 10;
+    margin-right: 300px;
+    margin-left: 0; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 100px;
+    padding-right: 30px;
+    margin-right: 70px;
+    margin-top: 120px;
+}
+
+.button {
+    background-color: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+img {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    font-size: 40px;
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #transparent;
+    margin: 0px;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 0px;
+    border: 0px solid #888;
+    width: 50%;
+}
+
+
+.close {
+    color: #FFFF11;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="ex11">
+<nav>
+
+        <button type="buttoncontact"> <a href="formpage2.html" class="buttoncontact"><b>Contact</b></a> </button>
+            
+        </nav>
+</div>
+
+<div class="ex7">
+
+ 
+<span> <a href="./Page1CSS.html" alt="home"><img src="festisite_google (1).png" alt="professionalpic" height="87" width="213">  </a> </span> 
+
+</div> 
+
+<div class="ex2">
+<nav>
+
+        <button type="button"> <a href="./page2css.html" class="button">Resume</a> </button>
+            <button type="button"> <a href="./PHOTOAGAIN.html" class="button">Photography</a> </button>
+            <button type="button"> <a href="./NEWESSAYS.html" class="button">Essays</a> </button>
+            <button type="button"> <a href="./REFERENCES.html" class="button">References</a> </button>
+        </nav>
+</div>
+<br>
+
+
+<main> 
+
+   <div>
+
+     <h2>Union Square Park</h2>
+     <h4>4/8/17</h4>
+
+     <button id="myBtn">
+<img src="1.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="1big.PNG" alt="ClassPhoto" width="600" height="300">
+    </div>
+</div>
+
+    <button id="myBtn">
+<img src="2.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="2big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+    <button id="myBtn">
+<img src="3.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="3big.PNG" alt="photo" width="600" height="300">
+    </div>
+
+</div>
+    <button id="myBtn">
+<img src="4.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="4big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+<div>
+
+     <h2>Night-time Subway</h2>
+     <h4>5/5/17</h4>
+        
+            <button id="myBtn">
+<img src="12.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="12big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+    <button id="myBtn">
+<img src="13.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="13big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+
+    <button id="myBtn">
+<img src="14.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="14big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+<button id="myBtn">
+<img src="15.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="15big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+<div>
+
+     <h2>Lower East Side</h2>
+     <h4>5/12/17</h4>
+        
+            <button id="myBtn">
+<img src="6.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="6big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+    <button id="myBtn">
+<img src="7.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="7big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+
+    <button id="myBtn">
+<img src="8.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="8big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+
+    <button id="myBtn">
+<img src="9.jpg" alt="photo" width="295" height="197">
+</button>
+
+<div id="myModal" class="modal">
+
+  
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="9big.PNG" alt="photo" width="600" height="300">
+    </div>
+</div>
+
+</div>
+
+
+        <aside>
+
+<div class="sidenav">
+  <aside>
+        <article>
+
+                <h2>Suggested Writings</h2>
+            
+            <span>
+                <img src="natural-hair-yara-shahidi1.jpg" height="100" width="100">
+                <figcaption>
+                    Study: Natural Hair
+                    <br />
+                    
+                    <a href="Study On Natural Hair.pdf">Essay</a>
+                </figcaption>
+            </span>
+            
+                <img src="makeup.jpg" width="100">
+                <figcaption>
+                    Study: Fashioning the Body
+                    <br />
+                   
+                    <a href="Fashioning The Body.pdf">Essay</a>
+                </figcaption>
+            
+            
+                <img src="london.jpg" height="100" width="100">
+                <figcaption>
+                    Study: British WorkPlace
+                    <br />
+                    
+                    <a href="London Internship Fieldwork.pdf">Essay</a>
+                </figcaption>
+            
+        </article>
+        <aside>
+</div>
+
+
+<script>
+
+var modal = document.getElementById('myModal');
+
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

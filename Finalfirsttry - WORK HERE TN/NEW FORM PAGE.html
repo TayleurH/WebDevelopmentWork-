@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #FFFF11;
+    padding: 20px;
+    margin-left: 5%;
+    width: 500px;
+}
+
+.col-25 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+div.ex1 {
+    width:500px;
+    margin: auto;
+    border: 3px solid #A9A9A9;
+    border-style: outset;
+}
+
+div.ex2 {
+    width:500px;
+    margin-left: 500px;
+    margin-right: auto;
+    margin-top: 29px;
+    
+}
+
+div.ex6 {
+    width:500px;
+    margin-left: 480px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+div.ex3 {
+    width:700px;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+div.ex4 {
+    width:250px;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+div.ex5 {
+    width:250px;
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 30px;
+}
+
+div.ex10 {
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+
+}
+
+
+.left {
+    float: left;
+    width: 600px;
+    border: none;
+    padding: 10px;
+    padding-left: 100px; 
+}
+
+.right {
+    float: right;
+    width: 450px;
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 10;
+    margin-right: 300px;
+    margin-left: 0; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 100px;
+    padding-right: 30px;
+    margin-right: 250px;
+    margin-top: 80px;
+}
+
+.button {
+    background-color: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="ex2">
+ 
+<span   > 
+<a href="./Page1CSS.html" alt="home">
+    <img src="festisite_google (1).png" alt="professionalpic" height="87" width="213"> </a>  </span> 
+
+</div>   
+<div class="ex6">
+       <span > <button  id="middle" style="float: right" type="button"> <a href="./page2css.html" class="button">Resume</a> </button></span>
+         <span  >   <button id="middle"  style="float: right" type="button"> <a href="./page3css.html" class="button">Photography</a> </button></span>
+         <span  >   <button id="middle"  style="float: right" type="button"> <a href="./page4css.html" class="button">Essays</a> </button></span>
+        
+</div>
+<br>
+
+ 
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+<div class="ex4">
+<img src="festisite_google (1).png" alt="professionalpic" height="87" width="213">
+
+</div>
+  
+
+
+        
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+    <meta charset="utf-8">
+    <title>Hylton Portfolio</title>
+    <meta name="Tayleur" content="Portfolio Website">
+    <meta name="keywords" content="Portfolio Website">
+    <meta name="Portfolio Home" content="Portfolio">
+
+
+.border1 {
+    
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    float: right;
+    width: 450px;
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 10;
+    margin-right: 300px;
+    margin-left: 0; 
+     
+}
+
+.border2 {
+    
+    border: 3px;
+    border-style: outset;
+    
+}
+
+.border3 {
+    
+    border: 3px solid white;
+    border-style: solid;
+    
+}
+
+img {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 37%;
+}
+
+div.ex2 {
+    width:1500px;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+.button {
+    background-color: none;
+    border:none;
+    color: #757575;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    margin: 4px ;
+    cursor: pointer;
+    width: 150px;
+    height: 20px;
+
+}
+
+.buttoncontact {
+    background-color: #4d90fe;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+
+
+}
+
+div.ex3 {
+    width:50%;
+    margin-left: 25%;
+    margin-left: 37%;
+    margin-top: 1%;
+}
+
+div.ex5 {
+    width:50%;
+    margin-left: 90%;
+    
+    margin-top: 1%;
+}
+
+
+div.ex4 {
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 59px;
+
+}
+
+
+
+p.solid {
+    border: #2c6de8;
+    border-width: 1px;
+    border-style: solid;
+    width: 30%;
+   margin-top: 1%;
+    margin-left: 34%;
+    margin-right: 20%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    padding-left: .5%;
+    padding-right: .5%;
+    font-size: 20px;
+     
+ }
+
+
+</style>
+</head>
+<body onload="typeWriter()">
+   
+<div class="ex5">
+<nav>
+
+        <button type="buttoncontact"> <a href="formpage2.html" class="buttoncontact"><b>Contact</b></a> </button>
+            
+        </nav>
+</div>
+
+
+<div class="ex4">
+<img src="festisite_google (1).png" alt="professionalpic" height="87" width="213">
+
+</div>
+
+
+
+<div class="border1">
+   <p id="t1" class="solid"></p>        
+     </div>   
+  
+    
+        
+     
+        
+        <main>
+        <div class="ex3">
+        <nav>
+
+        <button type="button"> <a href="page2css.html" class="button"><b>Experience</b></a> </button>
+            <button type="button"> <a href="PHOTOAGAIN.html" class="button"><b>I'm Feeling Lucky</b></a> </button>
+            
+        </nav>
+        </div>
+        <br>
+        </main>
+    
+  <script>
+var i = 0;
+var txt = 'Tayleur Hylton. NYU Graduate. MARKETING GURU.';
+var speed = 110;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("t1").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+ 
+    
+</body>
+
+</html>

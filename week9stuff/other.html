@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geoloc</title>
+
+	<script type="text/javascript">
+
+function getLocation(argument) {
+	
+if (navigator.getLocation) {
+console.log(navigator.getLocation);
+navigator.getLocation.getCurrentPosition(setPosition);
+} else{
+	alert('geo not avail.')
+	}
+}
+
+function setPosition()
+}
+
+}
+
+</script>
+</head>
+<body onLoad="getLocation();">
+	<div id="location></div>
+</body>
+</html>

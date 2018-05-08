@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+//this is my java function homework but I also incorparted Java into my Midterm site, with the Javascript typewriter: I learned how to do this search from this example: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list 
+
+
+#myMood {
+  width: 200px;
+  font-size: 30px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 10px solid lightblue;
+  
+  background-color: #FFFF78;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #FFFF11;
+}
+</style>
+</head>
+<body style="background-color:lightpink;">
+
+<h1>Weekday <b>Moods</b> Lookup</h1>
+
+<input type="text" id="myInput" onkeyup="myMoodGenerator()" placeholder="Search for mood gifs.." title="Type in moods">
+
+<ul id="myUL">
+  <li><a href="https://media3.giphy.com/media/pqodzWcYTrwXPexX8S/giphy.gif">Mondays</a></li>
+  <li><a href="https://media3.giphy.com/media/xT9Igjn6wv0kWFRm48/giphy.gif">Tuesdays</a></li>
+
+  <li><a href="https://media3.giphy.com/media/eYilisUwipOEM/giphy.gif">Wednesdays</a></li>
+  <li><a href="https://media2.giphy.com/media/VsSksaIufXQR2/giphy.gif">Thursday</a></li>
+
+  <li><a href="https://media1.giphy.com/media/26BRIL53texMuRZra/giphy.gif">Friday</a></li>
+  <li><a href="https://media0.giphy.com/media/NUyyaafqdUwsE/giphy.gif">Saturday</a></li>
+  <li><a href="https://www.youtube.com/watch?v=_ruefRP49II">Sunday</a></li>
+</ul>
+
+<script>
+function myMoodGenerator() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myMood");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+
+        }
+    }
+}
+</script>
+
+</body>
+</html>

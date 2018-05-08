@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    <meta charset="utf-8">
+    <title>Hylton Portfolio</title>
+    <meta name="Tayleur" content="Portfolio Website">
+    <meta name="keywords" content="Portfolio Website">
+    <meta name="Portfolio Home" content="Portfolio">
+
+
+.border1 {
+    
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    float: right;
+    width: 450px;
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 10;
+    margin-right: 300px;
+    margin-left: 0; 
+     
+}
+
+.border2 {
+    
+    border: 3px;
+    border-style: outset;
+    
+}
+
+.border3 {
+    
+    border: 3px solid white;
+    border-style: solid;
+    
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ex2 {
+    width:1500px;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+.button {
+    background-color: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+div.ex3 {
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+
+div.ex4 {
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 59px;
+
+}
+
+
+p.solid {border-style: outset;margin-left: 600px; margin-right: 600px;}
+
+
+</style>
+</head>
+<body onload="typeWriter()">
+   
+
+<div class="ex4">
+<img src="festisite_google (1).png" alt="professionalpic" height="87" width="213">
+
+</div>
+
+<div class="border1">
+   <p id="t1" class="solid"></p>        
+     </div>   
+  
+    
+        
+     <div>          
+<img src="profilepic.jpg" alt="professionalpic" height="418" width="287">
+</div>
+
+<div class="ex2">
+        About:
+        
+        <span class="border2">Tayleur Hylton is an upcoming NYU graduate. She concentrated in Marketing and Sociology and has delved into digital marketing for her career path. To learn more check out skills below.
+        
+                </span>
+
+        </div>
+        
+        <main>
+        <div class="ex3">
+        <nav>
+
+        <button type="button"> <a href="./page2css.html" class="button">Resume</a> </button>
+            <button type="button"> <a href="./page3css.html" class="button">Photography</a> </button>
+            <button type="button"> <a href="./page4css.html" class="button">Essays</a> </button>
+        </nav>
+        </div>
+        <br>
+        </main>
+    
+  <script>
+var i = 0;
+var txt = 'Tayleur Hylton';
+var speed = 90;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("t1").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+ 
+    
+</body>
+
+</html>

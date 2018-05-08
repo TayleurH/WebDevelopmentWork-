@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hylton Ribs</title>
+    <meta name="Tayleur" content="Portfolio Website">
+    <meta name="keywords" content="Portfolio Website">
+    <meta name="Portfolio" content="Portfolio">
+</head>
+
+<body>
+   
+    <header>
+        
+
+        <h3>Google Search Results:</h3>
+    <nav>
+        <button type="button"> <a href="#">Resume</a> </button>
+            <button type="button"> <a href="#">Photography</a> </button>
+            <button type="button"> <a href="#">Essays</a> </button>
+        </nav>
+    </header>
+  
+    <main>
+
+        <img src="profilepic.jpg" alt="professionalpic" height="400" width="400">
+
+        
+
+       <!-- <aside>
+            <ul>
+                <li><a href="#">Essay: On Makeup</a></li>
+                <li><a href="#">LES Photoshoot</a>
+                            
+                    </ul>
+                </li>
+            </ul>
+    </aside> -->
+
+
+        <aside>
+        <article>
+
+                <h2>Suggested</h2>
+            
+            <figure>
+                <img src="https://www.samaa.tv/wp-content/uploads/2017/05/d3660dc17cc035b4b6d2be51f4222365_designscrapbook-may-2011-date-night-clipart_1600-1380-557x480.jpeg" height="100" width="100">
+                <figcaption>
+                    Lower East Side
+                    <br />
+                    
+                    <a href="#">Photopraphy</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://cdn.skim.gs/image/upload/v1456337590/msi/kids-birthday-party-ideas_i9a1lo.jpg" height="100" width="100">
+                <figcaption>
+                    Effects Of Makeup
+                    <br />
+                   
+                    <a href="#">Essays</a>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="http://eatmorecake.co.uk/wp-content/uploads/2016/01/Friends-29_3041673k-1-620x350-1.jpg" height="100" width="100">
+                <figcaption>
+                    Union Square
+                    <br />
+                    
+                    <a href="#">Photography</a>
+                </figcaption>
+            </figure>
+        </article>
+        <aside>
+    </main>
+   
+    
+</body>
+
+</html>

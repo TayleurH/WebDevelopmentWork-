@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+<style>
+
+div.ex1 {
+    width:500px;
+    margin: auto;
+    border: 3px solid #A9A9A9;
+    border-style: outset;
+}
+
+div.ex2 {
+    width:500px;
+    margin-left: 480px;
+    margin-right: auto;
+    margin-top: 0px;
+
+}
+
+div.ex3 {
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.ex4 {
+    width:250px;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+div.ex7 {
+    width:500px;
+    margin-left: 600px;
+    margin-right: auto;
+    margin-top: 29px;
+
+}
+
+.left {
+    float: left;
+    width: 600px;
+    border: none;
+    padding: 10px;
+    padding-left: 100px; 
+}
+
+.right {
+    float: right;
+    width: 450px;
+    border: 3px solid #A9A9A9;
+    border-style: solid;
+    padding: 10px;
+    padding-right: 10;
+    margin-right: 300px;
+    margin-left: 0; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 100px;
+    padding-right: 30px;
+    margin-right: 70px;
+    margin-top: 120px;
+}
+
+.button {
+    background-color: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+img {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    font-size: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="ex7">
+
+ 
+<span> <a href="./Page1CSS.html" alt="home"><img src="festisite_google (1).png" alt="professionalpic" height="87" width="213">  </a> </span> 
+
+</div> 
+
+<div class="ex2">
+<nav>
+
+        <button type="button"> <a href="./page2css.html" class="button">Resume</a> </button>
+            <button type="button"> <a href="./page3css.html" class="button">Photography</a> </button>
+            <button type="button"> <a href="./page4css.html" class="button">Essays</a> </button>
+        </nav>
+</div>
+<br>
+
+
+<main> 
+
+  
+
+        <aside>
+
+<div class="sidenav">
+  <aside>
+        <article>
+
+                <h2>Suggested Writings</h2>
+            
+            <span>
+                <img src="natural-hair-yara-shahidi1.jpg" height="100" width="100">
+                <figcaption>
+                    Study: Natural Hair
+                    <br />
+                    
+                    <a href="Study On Natural Hair.pdf">Essay</a>
+                </figcaption>
+            </span>
+            
+                <img src="makeup.jpg" width="100">
+                <figcaption>
+                    Study: Fashioning the Body
+                    <br />
+                   
+                    <a href="Fashioning The Body.pdf">Essay</a>
+                </figcaption>
+            
+            
+                <img src="london.jpg" height="100" width="100">
+                <figcaption>
+                    Study: British WorkPlace
+                    <br />
+                    
+                    <a href="London Internship Fieldwork.pdf">Essay</a>
+                </figcaption>
+            
+        </article>
+        <aside>
+</div>
+
+
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="14big.PNG" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="9.big.PNG" style="width:100%">
+  <img class="mySlides" src="7big.PNG" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
